@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.3'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'HeyDoctor'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    // Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    // DevTools
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    // DB
+    runtimeOnly 'org.postgresql:postgresql'
+    // Swagger (API 문서 자동화)
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+    // PostGIS (공간 라이브러리)
+    implementation 'org.locationtech.jts:jts-core:1.18.2'
+    implementation 'org.hibernate:hibernate-spatial'
+    // AI (Gemini)
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3' // HTTP 클라이언트
+    implementation 'com.google.code.gson:gson:2.8.9' // JSON 직렬화/역직렬화
+    // Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
