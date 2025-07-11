@@ -1,4 +1,4 @@
-package HeyDoctor.HeyDoctor_Backend.exception;
+package HeyDoctor.HeyDoctor_Backend.global.exception;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

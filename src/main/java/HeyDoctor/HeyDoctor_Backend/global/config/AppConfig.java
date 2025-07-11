@@ -1,4 +1,4 @@
-package HeyDoctor.HeyDoctor_Backend.config;
+package HeyDoctor.HeyDoctor_Backend.global.config;
 
 import org.springframework.context.annotation.Configuration;
 
