@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-251.26927.53">
+    <data-source name="postgres@aws-0-ap-northeast-2.pooler.supabase.com" uuid="ee3a2720-655e-4565-8b15-aef17b27026d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <user-name>postgres.hoxnroonysjvuokheyzo</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="postgres@aws-0-ap-northeast-2.pooler.supabase.com" uuid="14f7eb5b-795c-4f76-beb1-faef5dce3089">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <user-name>postgres.hoxnroonysjvuokheyzo</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

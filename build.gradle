@@ -26,37 +26,61 @@ repositories {
 dependencies {
     // WebClient (비동기 HTTP 통신)
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
     // Web (동기 HTTP 서버 및 Controller 등)
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
     // JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
     // Security
     implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // OAuth2 Client (소셜 로그인용)
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+    // JWT
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.2'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.2'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.2'
+
+    // Thymeleaf + Spring Security 연동 — [추가]
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+
     // Lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
     // DevTools
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
     // DB Driver
     runtimeOnly 'org.postgresql:postgresql'
+
     // Swagger (API 문서 자동화)
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+
     // PostGIS (공간 처리 라이브러리)
     implementation 'org.locationtech.jts:jts-core:1.18.2'
     implementation 'org.hibernate:hibernate-spatial'
+
     // AI - Gemini API 연동
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
     implementation 'com.google.code.gson:gson:2.8.9'
+
+    // dotenv (환경변수 .env 자동 로드)
+    implementation 'io.github.cdimascio:dotenv-java:3.0.0'
+
     // 테스트
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
-    testImplementation 'org.mockito:mockito-inline:5.2.0' // static, final mocking
+    testImplementation 'org.mockito:mockito-inline:5.2.0'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
     jvmArgs += [
-        "-javaagent:${classpath.find { it.name.contains('byte-buddy-agent') || it.name.contains('mockito-inline') }.absolutePath}"
+            "-javaagent:${classpath.find { it.name.contains('byte-buddy-agent') || it.name.contains('mockito-inline') }.absolutePath}"
     ]
 }

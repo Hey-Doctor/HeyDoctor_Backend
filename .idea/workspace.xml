@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="280e0444-a3d6-4560-92a9-79c92b604474" name="변경" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="30DS0JME2A3qQW4TcqK0sEpaFSi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.소스 다운로드.executor": "Run",
+    "JUnit.EnvAllVariablesTest.executor": "Run",
+    "JUnit.EnvFileLoadTest.executor": "Run",
+    "JUnit.EnvFileLoadTest.testLoadEnvFileVariables.executor": "Run",
+    "JUnit.EnvPropertyLoadTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.HeyDoctorBackendApplication.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/user/Desktop/HeyDoctor_Backend-feat-6",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\HeyDoctor_Backend-feat-6\src\main\java\HeyDoctor\HeyDoctor_Backend\global\security\jwt" />
+      <recent name="C:\Users\user\Desktop\HeyDoctor_Backend-feat-6\src\main\java\HeyDoctor\HeyDoctor_Backend\global\security\jwt\RefreshToken" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HeyDoctorBackendApplication">
+    <configuration name="EnvAllVariablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HeyDoctor_Backend.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup" />
+      <option name="MAIN_CLASS_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.EnvAllVariablesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnvFileLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HeyDoctor_Backend.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup" />
+      <option name="MAIN_CLASS_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.EnvFileLoadTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnvFileLoadTest.testLoadEnvFileVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HeyDoctor_Backend.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup" />
+      <option name="MAIN_CLASS_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.EnvFileLoadTest" />
+      <option name="METHOD_NAME" value="testLoadEnvFileVariables" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnvPropertyLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HeyDoctor_Backend.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup" />
+      <option name="MAIN_CLASS_NAME" value="HeyDoctor.HeyDoctor_Backend.domain.users.model.signup.EnvPropertyLoadTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeyDoctorBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="HeyDoctor_Backend.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="HeyDoctor.HeyDoctor_Backend.HeyDoctorBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EnvFileLoadTest" />
+        <item itemvalue="JUnit.EnvFileLoadTest.testLoadEnvFileVariables" />
+        <item itemvalue="JUnit.EnvPropertyLoadTest" />
+        <item itemvalue="JUnit.EnvAllVariablesTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="280e0444-a3d6-4560-92a9-79c92b604474" name="변경" comment="" />
+      <created>1753160427004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753160427004</updated>
+      <workItem from="1753160428784" duration="4554000" />
+      <workItem from="1753196165583" duration="7098000" />
+      <workItem from="1753203293743" duration="41000" />
+      <workItem from="1753245339398" duration="33000" />
+      <workItem from="1753579714480" duration="2665000" />
+      <workItem from="1753668621556" duration="6591000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
