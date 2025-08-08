@@ -1,13 +1,13 @@
 package HeyDoctor.HeyDoctor_Backend.domain.User.oauth.UserInfo;
 
-import lombok.AllArgsConstructor;
-
 import java.util.Map;
 
-@AllArgsConstructor
 public class NaverUserInfo implements OAuth2UserInfo {
+    private final Map<String, Object> attributes;
 
-    private Map<String, Object> attributes;
+    public NaverUserInfo(Map<String, Object> attributes) {
+        this.attributes = attributes;
+    }
 
     @Override
     public String getProviderId() {
@@ -15,12 +15,13 @@ public class NaverUserInfo implements OAuth2UserInfo {
     }
 
     @Override
-    public String getProvider() {
-        return "naver";
+    public String getEmail() {
+        return (String) attributes.get("email");
     }
 
     @Override
     public String getName() {
-        return (String) attributes.get("name");
+        return (String) attributes.get("nickname");
     }
 }
+

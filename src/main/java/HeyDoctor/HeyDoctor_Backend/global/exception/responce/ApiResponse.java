@@ -1,5 +1,6 @@
 package HeyDoctor.HeyDoctor_Backend.global.exception.responce;
 
+import HeyDoctor.HeyDoctor_Backend.global.exception.dto.BaseCode;
 import HeyDoctor.HeyDoctor_Backend.global.exception.dto.ResultDto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -20,7 +21,8 @@ public class ApiResponse<T> {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private final T payload;
 
-    public static <T> ResponseEntity<ApiResponse<T>> onSuccess(ResultDto result, T data) {
+    public static <T> ResponseEntity<ApiResponse<T>> onSuccess(BaseCode baseCode, T data) {
+        ResultDto result = baseCode.getReasonHttpStatus();
         ApiResponse<T> response = new ApiResponse<>(
                 true,
                 result.getCode(),
@@ -30,7 +32,8 @@ public class ApiResponse<T> {
         return ResponseEntity.status(result.getHttpStatus()).body(response);
     }
 
-    public static <T> ResponseEntity<ApiResponse<T>> onFailure(ResultDto result) {
+    public static <T> ResponseEntity<ApiResponse<T>> onFailure(BaseCode baseCode) {
+        ResultDto result = baseCode.getReasonHttpStatus();
         ApiResponse<T> response = new ApiResponse<>(
                 false,
                 result.getCode(),

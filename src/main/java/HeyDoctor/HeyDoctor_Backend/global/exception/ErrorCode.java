@@ -20,6 +20,9 @@ public enum ErrorCode implements BaseCode {
     INVALID_ACCESS_TOKEN(HttpStatus.UNAUTHORIZED, "401", "유효하지 않은 액세스 토큰입니다."),
     INVALID_REFRESH_TOKEN(HttpStatus.UNAUTHORIZED, "401", "유효하지 않은 리프레시 토큰입니다."),
 
+    // 소셜 로그인 토큰 관련 에러 추가
+    INVALID_SOCIAL_TOKEN(HttpStatus.UNAUTHORIZED, "401", "유효하지 않은 소셜 로그인 토큰입니다."),
+
     // 유저 에러
     NOT_FOUND_USER(HttpStatus.NOT_FOUND, "404", "존재하지 않는 유저입니다.");
 

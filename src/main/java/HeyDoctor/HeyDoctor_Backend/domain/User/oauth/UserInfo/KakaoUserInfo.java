@@ -1,28 +1,29 @@
 package HeyDoctor.HeyDoctor_Backend.domain.User.oauth.UserInfo;
 
-import lombok.AllArgsConstructor;
-
 import java.util.Map;
 
-@AllArgsConstructor
 public class KakaoUserInfo implements OAuth2UserInfo {
+    private final Map<String, Object> attributes;
 
-    private Map<String, Object> attributes;
-
-    @Override
-    public String getProviderId() {
-        // Long 타입이기 때문에 toString으로 변환
-        return attributes.get("id").toString();
+    public KakaoUserInfo(Map<String, Object> attributes) {
+        this.attributes = attributes;
     }
 
     @Override
-    public String getProvider() {
-        return "kakao";
+    public String getProviderId() {
+        return String.valueOf(attributes.get("id"));
+    }
+
+    @Override
+    public String getEmail() {
+        Map<String, Object> kakaoAccount = (Map<String, Object>) attributes.get("kakao_account");
+        return (String) kakaoAccount.get("email");
     }
 
     @Override
     public String getName() {
-        // kakao_account라는 Map에서 추출
-        return (String) ((Map) attributes.get("properties")).get("nickname");
+        Map<String, Object> kakaoAccount = (Map<String, Object>) attributes.get("kakao_account");
+        Map<String, Object> profile = (Map<String, Object>) kakaoAccount.get("profile");
+        return (String) profile.get("nickname");
     }
 }

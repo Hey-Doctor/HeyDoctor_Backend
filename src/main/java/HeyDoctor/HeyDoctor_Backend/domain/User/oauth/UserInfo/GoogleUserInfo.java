@@ -1,13 +1,13 @@
 package HeyDoctor.HeyDoctor_Backend.domain.User.oauth.UserInfo;
 
-import lombok.AllArgsConstructor;
-
 import java.util.Map;
 
-@AllArgsConstructor
 public class GoogleUserInfo implements OAuth2UserInfo {
+    private final Map<String, Object> attributes;
 
-    private Map<String, Object> attributes;
+    public GoogleUserInfo(Map<String, Object> attributes) {
+        this.attributes = attributes;
+    }
 
     @Override
     public String getProviderId() {
@@ -15,8 +15,8 @@ public class GoogleUserInfo implements OAuth2UserInfo {
     }
 
     @Override
-    public String getProvider() {
-        return "google";
+    public String getEmail() {
+        return (String) attributes.get("email");
     }
 
     @Override
