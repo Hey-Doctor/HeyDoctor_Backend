@@ -62,7 +62,7 @@ dependencies {
 
     // PostGIS (공간 처리 라이브러리)
     implementation 'org.locationtech.jts:jts-core:1.18.2'
-    implementation 'org.hibernate:hibernate-spatial'
+    implementation 'org.hibernate:hibernate-spatial:6.6.18.Final'
 
     // AI - Gemini API 연동
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
