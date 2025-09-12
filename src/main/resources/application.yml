@@ -39,10 +39,13 @@ springdoc:
     path: /swagger-ui.html
 
 api:
-  public:
-    hospital-key: Wjn354cR5FyaLyi8ljwEFz3haoZfNnwwkPqzKkSorTG/ekqLLvQ7zUv1aZdZ4axe4y0UDDq7mjEnNJPYyC6CUw==
   kakao:
-    rest-key: 63e456faac2c82ccf10db8911595efc4
+    rest-key: ${KAKAO_API_KEY}
+  weather:
+    key: ${WEATHER_API_KEY}
+  alert:
+    key: ${ALERT_API_KEY}
+
 
 gemini:
   api-key: ${GEMINI_API_KEY}

@@ -30,6 +30,9 @@ dependencies {
     // Web (동기 HTTP 서버 및 Controller 등)
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
+    // JSON 파싱 및 생성 라이브러리 추가
+    implementation 'org.json:json:20231013'
+
     // JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
@@ -44,7 +47,7 @@ dependencies {
     runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.2'
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.2'
 
-    // Thymeleaf + Spring Security 연동 — [추가]
+    // Thymeleaf + Spring Security 연동
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 
     // Lombok
@@ -68,7 +71,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
     implementation 'com.google.code.gson:gson:2.8.9'
 
-    // dotenv (환경변수 .env 자동 로드)
+    // dotenv (환경변수 ..env 자동 로드)
     implementation 'io.github.cdimascio:dotenv-java:3.0.0'
 
     // 테스트
