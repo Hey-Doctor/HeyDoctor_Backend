@@ -1,0 +1,51 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+
+jwt:
+  secret: ${JWT_SECRET}
+  access-token:
+    expiration-time: ${ACCESS_TOKEN_EXPIRATION_TIME}
+  refresh-token:
+    expiration-time: ${REFRESH_TOKEN_EXPIRATION_TIME}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+api:
+  kakao:
+    rest-key: ${KAKAO_API_KEY}
+  weather:
+    key: ${WEATHER_API_KEY}
+  alert:
+    key: ${ALERT_API_KEY}
+
+
+gemini:
+  api-key: ${GEMINI_API_KEY}
